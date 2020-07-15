@@ -47,7 +47,6 @@ movilidad%>%
 ##Viridis y formato de leyenda
   scale_fill_viridis("Afluencia\nde\npersonas",na.value="white",
                    option = "B",direction =1,labels=scales::comma)+
-  #scale_y_discrete(expand=c(0,0))+
   scale_x_date(expand = c(0, 0)) +
   theme_minimal()+
   ##Línea que marca inicio de Jornada Nacional de Sana Distancia
