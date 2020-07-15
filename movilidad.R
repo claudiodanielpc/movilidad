@@ -37,7 +37,9 @@ movilidad<-movilidad%>%
 arrange(fecha)%>%
   mutate(linea = factor(linea, levels=rev(c("L1", "L2", 
                                       "L3", "L4", "L5", "L6", "L7", "L8",
-                                      "L9","LA","LB","L12"))))
+                                      "L9","LA","LB","L12"))))%>%
+  ##Dejar todo aquello que sea menor al 13 de julio (no tiene datos)
+  filter(fecha<"2020-07-13")
 
 ##Crear gráfico. LET THE MAGIC BEGIN!
 
@@ -80,7 +82,7 @@ movilidad%>%
   ##Formalidad. Título, subtítulo y fuente
   labs(
     title = "Ciudad de México. Afluencia preliminar en transporte público. Metro y Metrobús",
-    subtitle = "marzo a julio 2020",
+    subtitle = "Del 1° de marzo al 12 de julio 2020",
     caption = "Nota: La línea vertical verde indica el inicio de la Jornada Nacional de Sana Distancia (23 de marzo)
 mientras que la línea vertical amarilla indica la conclusión de ésta (30 de mayo)
 Fuente: @claudiodanielpc con datos del Gobierno de la Ciudad de México. Agencia Digital de Innovación Pública (ADIP)",
