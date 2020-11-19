@@ -1,4 +1,4 @@
-
+##Se cargan las librerías
 
 if(!require('pacman')) install.packages('pacman')
 pacman::p_load(tidyverse, gganimate,viridis,gifski,scales, lubridate)
