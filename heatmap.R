@@ -72,4 +72,4 @@ Fuente: @claudiodanielpc con datos de la Agencia Digital de Innovación Pública
 
 
 ##Salvar el gráfico
-ggsave("heatmapmm.png",height = 10,width = 30, units="in",dpi=300)
+ggsave("heatmapmetro.png",height = 10,width = 30, units="in",dpi=300)
